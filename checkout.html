@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — CROFT Grooming</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ann-bar">FREE SHIPPING ON ORDERS $50+ <span class="sep">|</span> CRUELTY-FREE &amp; MADE IN USA</div>
+
+<!-- CHECKOUT HEADER -->
+<header class="site-header">
+  <div class="checkout-header">
+    <div class="checkout-header__inner container">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Back to Shop
+      </a>
+      <a href="index.html" class="nav__logo" style="font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--white);letter-spacing:0.18em">CR<span style="color:var(--gold)">O</span>FT</a>
+      <div class="checkout-steps">
+        <div class="step-dot active"><div class="step-dot__num">1</div> Delivery</div>
+        <div class="step-connector"></div>
+        <div class="step-dot"><div class="step-dot__num">2</div> Payment</div>
+        <div class="step-connector"></div>
+        <div class="step-dot"><div class="step-dot__num">3</div> Confirm</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CHECKOUT BODY -->
+<main class="checkout-section">
+  <div class="container">
+    <form class="checkout-layout" id="checkout-form" novalidate>
+
+      <!-- LEFT: Form -->
+      <div>
+        <!-- Delivery Info -->
+        <div class="checkout-form-wrap" style="margin-bottom:20px">
+          <div class="checkout-section-title">Delivery Information</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="co-name">Full Name <span style="color:var(--gold)">*</span></label>
+              <input type="text" id="co-name" name="full-name" class="form-control" placeholder="James Mitchell" required>
+            </div>
+            <div class="form-group">
+              <label for="co-email">Email Address <span style="color:var(--gold)">*</span></label>
+              <input type="email" id="co-email" name="email" class="form-control" placeholder="james@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="co-phone">Phone Number <span style="color:var(--gold)">*</span></label>
+            <input type="tel" id="co-phone" name="phone" class="form-control" placeholder="(555) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="co-address">Street Address <span style="color:var(--gold)">*</span></label>
+            <input type="text" id="co-address" name="address" class="form-control" placeholder="123 Main Street" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="co-apt">Apartment / Suite</label>
+              <input type="text" id="co-apt" name="apt" class="form-control" placeholder="Apt 4B (optional)">
+            </div>
+            <div class="form-group">
+              <label for="co-city">City <span style="color:var(--gold)">*</span></label>
+              <input type="text" id="co-city" name="city" class="form-control" placeholder="Los Angeles" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="co-state">State <span style="color:var(--gold)">*</span></label>
+              <select id="co-state" name="state" class="form-control" required>
+                <option value="" disabled selected>Select state</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+                <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+                <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+                <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+                <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="co-zip">ZIP Code <span style="color:var(--gold)">*</span></label>
+              <input type="text" id="co-zip" name="zip" class="form-control" placeholder="90013" required maxlength="10">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="co-notes">Delivery Notes</label>
+            <textarea id="co-notes" name="notes" class="form-control" placeholder="Leave at door, ring doorbell, etc. (optional)" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="checkout-form-wrap">
+          <div class="checkout-section-title">Payment Method</div>
+          <div class="payment-method-box">
+            <input type="radio" name="payment" id="pay-cod" checked>
+            <div>
+              <div class="payment-method-label">Cash on Delivery (COD)</div>
+              <p class="payment-method-desc">Pay in cash when your order arrives at your door. No card required — just be ready to pay the delivery total shown in your order summary.</p>
+              <div class="cod-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure &amp; Trusted
+              </div>
+            </div>
+          </div>
+
+          <div class="consent-row">
+            <input type="checkbox" id="co-consent" name="consent">
+            <label for="co-consent">I agree to CROFT's <a href="terms-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>. I understand my order will be fulfilled via Cash on Delivery.</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" style="padding:18px;font-size:0.9rem;letter-spacing:0.14em">
+            Place Order — Pay on Delivery
+          </button>
+          <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:14px">
+            🔒 Your personal information is safe and never shared with third parties.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Order Summary -->
+      <div class="order-summary-box">
+        <div class="order-summary-title">Order Summary</div>
+        <div id="order-items"></div>
+        <div class="order-totals">
+          <div class="order-total-row"><span>Subtotal</span><span id="order-subtotal">—</span></div>
+          <div class="order-total-row"><span>Shipping</span><span id="order-shipping">—</span></div>
+          <div class="order-total-row total"><span>Total (COD)</span><span id="order-total">—</span></div>
+        </div>
+        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:14px;line-height:1.5">Free standard shipping on orders $50+. Estimated delivery: 3–5 business days.</p>
+      </div>
+
+    </form>
+  </div>
+</main>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    </div>
+    <div class="modal-title" id="modal-title">Order Confirmed!</div>
+    <div class="modal-order-num" id="modal-order-num">CR-0000</div>
+    <p class="modal-msg">
+      Thank you, <strong id="modal-name">there</strong>! Your order is confirmed and will be shipped to <strong id="modal-location">your address</strong>.<br><br>
+      Expected delivery: <strong>3–5 Business Days</strong>.<br>
+      You'll pay in cash when it arrives. We'll send a confirmation email shortly.
+    </p>
+    <div class="modal-btns">
+      <button id="modal-close" class="btn btn-primary">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
